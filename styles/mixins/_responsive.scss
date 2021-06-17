@@ -10,9 +10,3 @@
     }
   }
 }
-
-.section {
-  @include responsive(D) {
-    color: red;
-  }
-}
