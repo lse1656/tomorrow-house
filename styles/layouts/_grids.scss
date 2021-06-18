@@ -17,7 +17,7 @@
  * DESKTOP (>=120px)--------------------------------
  * fixture ------------------------ lg
  * of columns --------------------- 12
- * gutter ------------------------- 75px
+ * gutter ------------------------- 20px
  * margin ------------------------- auto
  * container ---------------------- 1140px
  * max-container-size ------------- 1140px
@@ -72,7 +72,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     padding: 0;
 
     @for $i from 1 through $lg-columns {
-      .col-md-#{$i} {
+      .col-lg-#{$i} {
         width: ($lg-unit + $gutter) * $i;
       }
     }
