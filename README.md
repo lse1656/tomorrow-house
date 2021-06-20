@@ -3,6 +3,7 @@
 ### 1. GNB
 
 - 로그인을 했을 경우
+  ![Authenticated](https://user-images.githubusercontent.com/74279737/122666558-e89aa980-d1e8-11eb-9ecc-e547b5f30fa9.jpg)
 
 ```html
 <div class="button-group">
@@ -52,6 +53,7 @@
 ```
 
 - 로그인을 하지 않았을 경우
+  ![UnsignedIn](https://user-images.githubusercontent.com/74279737/122666577-07993b80-d1e9-11eb-9285-35b983f21c9a.jpg)
 
 ```html
 <div class="button-group">
