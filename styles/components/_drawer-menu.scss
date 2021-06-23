@@ -1,6 +1,6 @@
 .drawer-menu {
   $drawer-height: 36px;
-  $drawer-padding: 8px;
+  $drawer-padding: 20px;
   $comunity-length: 8;
   $store-length: 9;
   $expert-length: 2;
@@ -51,7 +51,6 @@
     height: 54px;
     padding: 0 8px;
     font-weight: 700;
-    border-top: 1px solid $border;
     transition: color 200ms ease-in-out;
 
     i {
