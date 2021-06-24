@@ -91,10 +91,32 @@
 
   //NOTE: Desktop
   @include responsive(D) {
-    &-right {
-      .input-group {
-        width: 264px;
-        margin-right: 24px;
+    .gnb-search {
+      position: relative;
+      width: 264px;
+      margin-right: 24px;
+
+      &.is-active {
+        .search-history {
+          display: block;
+        }
+      }
+
+      .search-history {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 16px 8px 8px 8px;
+        background-color: $white;
+        border: 1px solid $border;
+        border-radius: 4px;
+        box-shadow: $dropdown-shadow;
+
+        &-header {
+          padding: 0 8px;
+        }
       }
     }
   }
