@@ -23,44 +23,4 @@
       margin-left: 8px;
     }
   }
-
-  .search-history {
-    &-header {
-      @include flexbox(between);
-      margin-bottom: 8px;
-
-      .title {
-        @include text-style(13, $secondary);
-      }
-
-      button {
-        @include text-style(13, $secondary);
-      }
-    }
-
-    &-content {
-      .search-history-item {
-        @include flexbox(between);
-        padding: 0 8px;
-
-        .word-button {
-          @include text-style(16, $primary);
-          width: 250px;
-          overflow: hidden;
-          text-align: left;
-          text-overflow: hidden;
-          white-space: nowrap;
-        }
-
-        .delete-button {
-          font-size: 16px;
-          color: $tertiary;
-        }
-      }
-
-      .placeholder {
-        @include text-style(16, $tertiary);
-      }
-    }
-  }
 }
