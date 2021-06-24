@@ -1,0 +1,66 @@
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $search-modal-level;
+  width: 100%;
+  height: 100vh;
+  padding: 12px 0;
+  background-color: $white;
+
+  &-form {
+    @include flexbox(between);
+    margin-bottom: 20px;
+
+    .input-group {
+      flex-grow: 1;
+    }
+
+    .btn-ghost {
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 56px;
+      margin-left: 8px;
+    }
+  }
+
+  .search-history {
+    &-header {
+      @include flexbox(between);
+      margin-bottom: 8px;
+
+      .title {
+        @include text-style(13, $secondary);
+      }
+
+      button {
+        @include text-style(13, $secondary);
+      }
+    }
+
+    &-content {
+      .search-history-item {
+        @include flexbox(between);
+        padding: 0 8px;
+
+        .word-button {
+          @include text-style(16, $primary);
+          width: 250px;
+          overflow: hidden;
+          text-align: left;
+          text-overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .delete-button {
+          font-size: 16px;
+          color: $tertiary;
+        }
+      }
+
+      .placeholder {
+        @include text-style(16, $tertiary);
+      }
+    }
+  }
+}
