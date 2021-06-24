@@ -1,6 +1,6 @@
 .lnb {
-  width: 100vw;
   overflow-x: auto;
+  overflow-y: visible;
   border-bottom: 1px solid $border;
 
   &::-webkit-scrollbar {
@@ -20,17 +20,14 @@
       height: 40px;
       padding: 0 8px;
       font-weight: 700;
-
-      .ic-new {
-        color: $red;
-      }
+      border-bottom: 2px solid transparent;
     }
 
     &.is-active {
       a {
         position: relative;
         color: $blue;
-        border-bottom: 2px solid $blue;
+        border-bottom-color: $blue;
       }
     }
   }
