@@ -1,10 +1,8 @@
 .lnb {
-  $lnb-height-sm: 40px;
-  $lnb-height-md: 50px;
-
   @include no-scrollbar;
   overflow-x: auto;
   overflow-y: visible;
+  background-color: $white;
   border-bottom: 1px solid $border;
 
   &-list {
